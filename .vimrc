@@ -21,6 +21,8 @@ set rtp+=~/.vim/bundle/Vundle.vim   " set runtime patch to include Vundle and in
 call vundle#begin()                 " plugin begin (plugin must put between start and end)
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ctrlpvim/ctrlp.vim'
 call vundle#end()                   " plugin end
 filetype plugin on 
 " vundle end
