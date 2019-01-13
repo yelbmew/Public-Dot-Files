@@ -4,6 +4,20 @@ HISTFILESIZE=60000
 export HISTTIMEFORMAT="%F %T:"      # set datetime on history
 HISTCONTROL=ignorespace
 
+
+# user's path
+export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+
+
+# powerline
+if [ -f `which powerline-daemon` ]; then  
+  powerline-daemon -q                     
+  POWERLINE_BASH_CONTINUATION=1           
+  POWERLINE_BASH_SELECT=1                 
+  . /usr/share/powerline/bash/powerline.sh
+fi                                        
+
+
 # alias
 alias bashconf="vim ~/.bashrc"
 alias bashrel="source ~/.bashrc"
@@ -13,9 +27,6 @@ alias tmuxconf="vim ~/.tmux.conf"
 alias vimconf="vim ~/.vimrc"
 alias xiconf="vim ~/.xinitrc"
 alias xrconf="vim ~/.Xresources"
-
-# fuzzy finder
-# [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 shopt -s histappend
 
