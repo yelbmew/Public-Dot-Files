@@ -28,5 +28,5 @@ alias vimconf="vim ~/.vimrc"
 alias xiconf="vim ~/.xinitrc"
 alias xrconf="vim ~/.Xresources"
 
-
 shopt -s histappend
+

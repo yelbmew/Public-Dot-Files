@@ -43,8 +43,7 @@ let g:airline#extensions#tabline#show_tab_type = 0
 " NERDTree begin
 map <C-n> :NERDTreeToggle<CR>   "shortcut to toggle NERDTree using Ctrl+n
 let NERDTreeAutoDeleteBuffer = 1
-autocmd bufenter * if (winnr("$") == 1 \
-&& exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif  " close vim if last window is NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif  " close vim if last window is NERDTree
 let g:NERDTreeWinSize=35
 :let g:NERDTreeShowLineNumbers=1
 :autocmd BufEnter NERD_* setlocal rnu
