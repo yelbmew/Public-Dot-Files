@@ -30,3 +30,5 @@ alias xrconf="vim ~/.Xresources"
 
 shopt -s histappend
 
+# enable fzf for Shell completion for Fedora 29
+source /usr/share/fzf/shell/key-bindings.bash 
