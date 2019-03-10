@@ -51,6 +51,10 @@ let g:NERDTreeWinSize=35
 let NERDTreeMinimalUI=1
 " NERDTree end
 
+" CtrlP Start 
+let g:ctrlp_open_new_file = 't'  " open on new tab instead of the default vertical split when pressing <c-y>
+" CtrlP End
+
 " disable arrow keys in Escape mode
 map <up> <nop>
 map <down> <nop>
